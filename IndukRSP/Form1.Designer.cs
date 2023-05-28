@@ -28,91 +28,66 @@ namespace IndukRSP
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Rock = new System.Windows.Forms.Button();
+            this.Scissors = new System.Windows.Forms.Button();
+            this.Paper = new System.Windows.Forms.Button();
             this.score_label = new System.Windows.Forms.Label();
-            this.score_box = new System.Windows.Forms.TextBox();
             this.Exit = new System.Windows.Forms.Button();
             this.question = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.score = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Rock
             // 
-            this.button1.Location = new System.Drawing.Point(61, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 100);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Rock.FlatAppearance.BorderSize = 0;
+            this.Rock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rock.Image = ((System.Drawing.Image)(resources.GetObject("Rock.Image")));
+            this.Rock.Location = new System.Drawing.Point(61, 433);
+            this.Rock.Name = "Rock";
+            this.Rock.Size = new System.Drawing.Size(110, 110);
+            this.Rock.TabIndex = 0;
+            this.Rock.UseVisualStyleBackColor = true;
+            this.Rock.Click += new System.EventHandler(this.Rock_Click);
             // 
-            // button2
+            // Scissors
             // 
-            this.button2.Location = new System.Drawing.Point(333, 433);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 100);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Scissors.FlatAppearance.BorderSize = 0;
+            this.Scissors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Scissors.Image = ((System.Drawing.Image)(resources.GetObject("Scissors.Image")));
+            this.Scissors.Location = new System.Drawing.Point(333, 433);
+            this.Scissors.Name = "Scissors";
+            this.Scissors.Size = new System.Drawing.Size(110, 110);
+            this.Scissors.TabIndex = 1;
+            this.Scissors.UseVisualStyleBackColor = true;
+            this.Scissors.Click += new System.EventHandler(this.Scissors_Click);
             // 
-            // button3
+            // Paper
             // 
-            this.button3.Location = new System.Drawing.Point(639, 433);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 100);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(372, 35);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 63);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(453, 35);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 63);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(286, 35);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(60, 63);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Paper.FlatAppearance.BorderSize = 0;
+            this.Paper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Paper.Image = ((System.Drawing.Image)(resources.GetObject("Paper.Image")));
+            this.Paper.Location = new System.Drawing.Point(639, 433);
+            this.Paper.Name = "Paper";
+            this.Paper.Size = new System.Drawing.Size(110, 110);
+            this.Paper.TabIndex = 2;
+            this.Paper.UseVisualStyleBackColor = true;
+            this.Paper.Click += new System.EventHandler(this.Paper_Click);
             // 
             // score_label
             // 
             this.score_label.AutoSize = true;
-            this.score_label.Location = new System.Drawing.Point(631, 33);
+            this.score_label.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.score_label.Location = new System.Drawing.Point(619, 33);
             this.score_label.Name = "score_label";
-            this.score_label.Size = new System.Drawing.Size(45, 19);
+            this.score_label.Size = new System.Drawing.Size(67, 30);
             this.score_label.TabIndex = 6;
             this.score_label.Text = "점수 :";
-            this.score_label.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // score_box
-            // 
-            this.score_box.Location = new System.Drawing.Point(679, 30);
-            this.score_box.Name = "score_box";
-            this.score_box.Size = new System.Drawing.Size(109, 26);
-            this.score_box.TabIndex = 7;
-            this.score_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // Exit
             // 
@@ -126,47 +101,66 @@ namespace IndukRSP
             this.Exit.TabIndex = 8;
             this.Exit.TabStop = false;
             this.Exit.UseVisualStyleBackColor = true;
-            this.Exit.Click += new System.EventHandler(this.button7_Click);
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // question
             // 
-            this.question.AutoSize = true;
             this.question.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.question.Location = new System.Drawing.Point(256, 355);
+            this.question.Location = new System.Drawing.Point(256, 331);
             this.question.Name = "question";
             this.question.Size = new System.Drawing.Size(288, 40);
             this.question.TabIndex = 9;
             this.question.Text = "게임승리조건 레이블";
-            this.question.Click += new System.EventHandler(this.label2_Click);
+            this.question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(225, 217);
+            this.label2.Location = new System.Drawing.Point(364, 209);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(351, 86);
+            this.label2.Size = new System.Drawing.Size(72, 86);
             this.label2.TabIndex = 10;
-            this.label2.Text = "3초 타이머";
+            this.label2.Text = "0";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(345, 30);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox.TabIndex = 11;
+            this.pictureBox.TabStop = false;
+            // 
+            // score
+            // 
+            this.score.AutoSize = true;
+            this.score.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.score.Location = new System.Drawing.Point(682, 33);
+            this.score.Name = "score";
+            this.score.Size = new System.Drawing.Size(25, 30);
+            this.score.TabIndex = 12;
+            this.score.Text = "0";
+            this.score.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 575);
+            this.Controls.Add(this.score);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.question);
             this.Controls.Add(this.Exit);
-            this.Controls.Add(this.score_box);
             this.Controls.Add(this.score_label);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Paper);
+            this.Controls.Add(this.Scissors);
+            this.Controls.Add(this.Rock);
             this.Name = "Form1";
             this.Text = "가위바위보";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,17 +168,16 @@ namespace IndukRSP
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Rock;
+        private System.Windows.Forms.Button Scissors;
+        private System.Windows.Forms.Button Paper;
         private System.Windows.Forms.Label score_label;
-        private System.Windows.Forms.TextBox score_box;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Label question;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Label score;
     }
 }
 
