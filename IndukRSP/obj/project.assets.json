@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\SAMSUNG\\.nuget\\packages\\": {}
+    "C:\\Users\\unicon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAMSUNG\\source\\repos\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
+      "projectUniqueName": "C:\\Users\\unicon\\Source\\Repos\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
       "projectName": "IndukRSP",
-      "projectPath": "C:\\Users\\SAMSUNG\\source\\repos\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
-      "packagesPath": "C:\\Users\\SAMSUNG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAMSUNG\\source\\repos\\IndukRSP\\IndukRSP\\obj\\",
+      "projectPath": "C:\\Users\\unicon\\Source\\Repos\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
+      "packagesPath": "C:\\Users\\unicon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\unicon\\Source\\Repos\\IndukRSP\\IndukRSP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SAMSUNG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\unicon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }

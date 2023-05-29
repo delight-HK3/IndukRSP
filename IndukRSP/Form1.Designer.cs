@@ -48,9 +48,10 @@ namespace IndukRSP
             this.Rock.FlatAppearance.BorderSize = 0;
             this.Rock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rock.Image = ((System.Drawing.Image)(resources.GetObject("Rock.Image")));
-            this.Rock.Location = new System.Drawing.Point(61, 433);
+            this.Rock.Location = new System.Drawing.Point(70, 324);
+            this.Rock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rock.Name = "Rock";
-            this.Rock.Size = new System.Drawing.Size(110, 110);
+            this.Rock.Size = new System.Drawing.Size(89, 105);
             this.Rock.TabIndex = 0;
             this.Rock.UseVisualStyleBackColor = true;
             this.Rock.Click += new System.EventHandler(this.Rock_Click);
@@ -60,9 +61,10 @@ namespace IndukRSP
             this.Scissors.FlatAppearance.BorderSize = 0;
             this.Scissors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Scissors.Image = ((System.Drawing.Image)(resources.GetObject("Scissors.Image")));
-            this.Scissors.Location = new System.Drawing.Point(333, 433);
+            this.Scissors.Location = new System.Drawing.Point(307, 325);
+            this.Scissors.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Scissors.Name = "Scissors";
-            this.Scissors.Size = new System.Drawing.Size(110, 110);
+            this.Scissors.Size = new System.Drawing.Size(74, 100);
             this.Scissors.TabIndex = 1;
             this.Scissors.UseVisualStyleBackColor = true;
             this.Scissors.Click += new System.EventHandler(this.Scissors_Click);
@@ -72,9 +74,10 @@ namespace IndukRSP
             this.Paper.FlatAppearance.BorderSize = 0;
             this.Paper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Paper.Image = ((System.Drawing.Image)(resources.GetObject("Paper.Image")));
-            this.Paper.Location = new System.Drawing.Point(639, 433);
+            this.Paper.Location = new System.Drawing.Point(542, 319);
+            this.Paper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Paper.Name = "Paper";
-            this.Paper.Size = new System.Drawing.Size(110, 110);
+            this.Paper.Size = new System.Drawing.Size(80, 110);
             this.Paper.TabIndex = 2;
             this.Paper.UseVisualStyleBackColor = true;
             this.Paper.Click += new System.EventHandler(this.Paper_Click);
@@ -82,10 +85,10 @@ namespace IndukRSP
             // score_label
             // 
             this.score_label.AutoSize = true;
-            this.score_label.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.score_label.Location = new System.Drawing.Point(619, 33);
+            this.score_label.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.score_label.Location = new System.Drawing.Point(521, 26);
             this.score_label.Name = "score_label";
-            this.score_label.Size = new System.Drawing.Size(67, 30);
+            this.score_label.Size = new System.Drawing.Size(91, 40);
             this.score_label.TabIndex = 6;
             this.score_label.Text = "점수 :";
             // 
@@ -95,9 +98,10 @@ namespace IndukRSP
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
             this.Exit.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Exit.Location = new System.Drawing.Point(12, 12);
+            this.Exit.Location = new System.Drawing.Point(12, 11);
+            this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(60, 60);
+            this.Exit.Size = new System.Drawing.Size(62, 60);
             this.Exit.TabIndex = 8;
             this.Exit.TabStop = false;
             this.Exit.UseVisualStyleBackColor = true;
@@ -106,9 +110,9 @@ namespace IndukRSP
             // question
             // 
             this.question.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.question.Location = new System.Drawing.Point(256, 331);
+            this.question.Location = new System.Drawing.Point(224, 261);
             this.question.Name = "question";
-            this.question.Size = new System.Drawing.Size(288, 40);
+            this.question.Size = new System.Drawing.Size(252, 42);
             this.question.TabIndex = 9;
             this.question.Text = "게임승리조건 레이블";
             this.question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,7 +121,7 @@ namespace IndukRSP
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(364, 209);
+            this.label2.Location = new System.Drawing.Point(318, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 86);
             this.label2.TabIndex = 10;
@@ -126,28 +130,29 @@ namespace IndukRSP
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(345, 30);
+            this.pictureBox.Location = new System.Drawing.Point(302, 24);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox.Size = new System.Drawing.Size(96, 101);
             this.pictureBox.TabIndex = 11;
             this.pictureBox.TabStop = false;
             // 
             // score
             // 
             this.score.AutoSize = true;
-            this.score.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.score.Location = new System.Drawing.Point(682, 33);
+            this.score.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.score.Location = new System.Drawing.Point(608, 26);
             this.score.Name = "score";
-            this.score.Size = new System.Drawing.Size(25, 30);
+            this.score.Size = new System.Drawing.Size(33, 40);
             this.score.TabIndex = 12;
             this.score.Text = "0";
             this.score.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 575);
+            this.ClientSize = new System.Drawing.Size(700, 454);
             this.Controls.Add(this.score);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.label2);
@@ -157,6 +162,7 @@ namespace IndukRSP
             this.Controls.Add(this.Paper);
             this.Controls.Add(this.Scissors);
             this.Controls.Add(this.Rock);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "가위바위보";
             this.Load += new System.EventHandler(this.Form1_Load);
