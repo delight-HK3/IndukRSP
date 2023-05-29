@@ -115,6 +115,12 @@ namespace IndukRSP
             Application.Exit();
         }
 
+
+        /// <summary>
+        /// 자신이 무엇을 낼 지 골랐을 때, 점수를 획득할 수 있는지 조건 검사
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Rock_Click(object sender, EventArgs e)
         {
             checkRule(3);
@@ -144,24 +150,30 @@ namespace IndukRSP
             seconds = 6;
         }
        
+
+        /// <summary>
+        /// 점수 획득 조건 검사
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
         private int checkRule(int num)
         {
             if (num == 3){
                 if (question.Text == Rule_1){
                     if (check == 2){
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
                 else if (question.Text == Rule_2){
                     if (check == 3){
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
                 else{
                     if (check == 1){
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
@@ -170,19 +182,19 @@ namespace IndukRSP
             {
                 if (question.Text == Rule_1){ 
                     if (check == 1){
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
                 else if (question.Text == Rule_2){
                     if (check == 2){
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
                 else {
                     if (check == 3){
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
@@ -193,7 +205,7 @@ namespace IndukRSP
                 {
                     if (check == 3)
                     {
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
@@ -201,7 +213,7 @@ namespace IndukRSP
                 {
                     if (check == 1)
                     {
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
@@ -209,7 +221,7 @@ namespace IndukRSP
                 {
                     if (check == 2)
                     {
-                        Cnt += 10;
+                        Cnt += 5;
                         score.Text = Cnt.ToString();
                     }
                 }
