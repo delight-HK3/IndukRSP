@@ -17,6 +17,7 @@ namespace IndukRSP
         public Form2()
         {
             InitializeComponent();
+            Endscore.Text = Form1.Cnt.ToString();
             this.form1 = form1; // Form1 참조를 초기화
         }
 
@@ -27,8 +28,7 @@ namespace IndukRSP
 
         private void gameReplay_Click(object sender, EventArgs e)
         {
-            form1.Show();
-            this.Close();
+            Application.Restart();  // 프로그램 재시작
         }
 
         private void gameExit_Click(object sender, EventArgs e)

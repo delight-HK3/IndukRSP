@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\unicon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\delight-HK3\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
+      "projectUniqueName": "C:\\Users\\unicon\\Source\\Repos\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
       "projectName": "IndukRSP",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\delight-HK3\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\delight-HK3\\IndukRSP\\IndukRSP\\obj\\",
+      "projectPath": "C:\\Users\\unicon\\Source\\Repos\\IndukRSP\\IndukRSP\\IndukRSP.csproj",
+      "packagesPath": "C:\\Users\\unicon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\unicon\\Source\\Repos\\IndukRSP\\IndukRSP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\unicon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -69,7 +69,7 @@ namespace IndukRSP
             label2.Text = seconds.ToString();
 
             //실행 횟수가 20회에 도달했는지 확인
-            if (play >= 20)
+            if (play >= 21)
             {
                 timer1.Stop();
 
@@ -137,7 +137,7 @@ namespace IndukRSP
         /// <param name="e"></param>
         private void Rock_Click(object sender, EventArgs e)
         {
-            if (play < 20)
+            if (play < 21)
             {
                 play++;
                 checkRule(3);
@@ -150,7 +150,7 @@ namespace IndukRSP
 
         private void Scissors_Click(object sender, EventArgs e)
         {
-            if (play < 20)
+            if (play < 21)
             {
                 play++;
                 checkRule(2);
@@ -163,7 +163,7 @@ namespace IndukRSP
 
         private void Paper_Click(object sender, EventArgs e)
         {
-            if (play < 20)
+            if (play < 21)
             {
                 play++;
                 checkRule(1);
