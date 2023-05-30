@@ -19,7 +19,7 @@ namespace IndukRSP
         private int check = 0; // 초기 
         private int show = 0; // 조건 1
         private int Rule = 0; // 조건 2
-        private int play = 0; //실행횟수
+        private int play = 1; //실행횟수
 
         /// <summary>
         /// 획득한 점수 및 맞춘 개수
@@ -63,6 +63,8 @@ namespace IndukRSP
                 RandomPic();
                 RandomWord();
                 seconds = 6;
+
+                play++;
             }
             label2.Text = seconds.ToString();
 

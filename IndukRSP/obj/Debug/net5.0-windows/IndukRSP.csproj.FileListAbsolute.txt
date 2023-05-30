@@ -57,3 +57,4 @@ C:\Users\user\Source\Repos\delight-HK3\IndukRSP\IndukRSP\obj\Debug\net5.0-window
 C:\Users\user\Source\Repos\delight-HK3\IndukRSP\IndukRSP\obj\Debug\net5.0-windows\ref\IndukRSP.dll
 C:\Users\user\Source\Repos\delight-HK3\IndukRSP\IndukRSP\obj\Debug\net5.0-windows\IndukRSP.pdb
 C:\Users\user\Source\Repos\delight-HK3\IndukRSP\IndukRSP\obj\Debug\net5.0-windows\IndukRSP.genruntimeconfig.cache
+C:\Users\user\Source\Repos\delight-HK3\IndukRSP\IndukRSP\obj\Debug\net5.0-windows\IndukRSP.csproj.AssemblyReference.cache
