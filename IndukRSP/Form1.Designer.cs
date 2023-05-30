@@ -40,6 +40,8 @@ namespace IndukRSP
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.score = new System.Windows.Forms.Label();
+            this.playRound_Label = new System.Windows.Forms.Label();
+            this.playCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,11 +150,34 @@ namespace IndukRSP
             this.score.Text = "0";
             this.score.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // playRound_Label
+            // 
+            this.playRound_Label.AutoSize = true;
+            this.playRound_Label.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.playRound_Label.Location = new System.Drawing.Point(573, 1);
+            this.playRound_Label.Name = "playRound_Label";
+            this.playRound_Label.Size = new System.Drawing.Size(68, 25);
+            this.playRound_Label.TabIndex = 14;
+            this.playRound_Label.Text = "Round";
+            this.playRound_Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // playCount
+            // 
+            this.playCount.AutoSize = true;
+            this.playCount.Font = new System.Drawing.Font("맑은 고딕", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.playCount.Location = new System.Drawing.Point(545, 1);
+            this.playCount.Name = "playCount";
+            this.playCount.Size = new System.Drawing.Size(22, 25);
+            this.playCount.TabIndex = 14;
+            this.playCount.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 454);
+            this.Controls.Add(this.playCount);
+            this.Controls.Add(this.playRound_Label);
             this.Controls.Add(this.score);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.label2);
@@ -184,6 +209,8 @@ namespace IndukRSP
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Label score;
+        private System.Windows.Forms.Label playRound_Label;
+        private System.Windows.Forms.Label playCount;
     }
 }
 

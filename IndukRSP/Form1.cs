@@ -19,6 +19,7 @@ namespace IndukRSP
         private int check = 0; // 초기 
         private int show = 0; // 조건 1
         private int Rule = 0; // 조건 2
+        private int play = 0; //실행횟수
 
         /// <summary>
         /// 획득한 점수 및 맞춘 개수
@@ -64,6 +65,17 @@ namespace IndukRSP
                 seconds = 6;
             }
             label2.Text = seconds.ToString();
+
+            //실행 횟수가 20회에 도달했는지 확인
+            if (play >= 20)
+            {
+                timer1.Stop();
+
+                Form2 from2 = new Form2();
+                from2.Show();
+                this.Hide();
+            }
+            playCount.Text = play.ToString();
         }
 
         /// <summary>
@@ -123,31 +135,41 @@ namespace IndukRSP
         /// <param name="e"></param>
         private void Rock_Click(object sender, EventArgs e)
         {
-            checkRule(3);
+            if (play < 20)
+            {
+                play++;
+                checkRule(3);
 
-            RandomPic();
-            RandomWord();
-            seconds = 6;
+                RandomPic();
+                RandomWord();
+                seconds = 6;
+            }
         }
 
         private void Scissors_Click(object sender, EventArgs e)
         {
+            if (play < 20)
+            {
+                play++;
+                checkRule(2);
 
-            checkRule(2);
-
-            RandomPic();
-            RandomWord();
-            seconds = 6;
+                RandomPic();
+                RandomWord();
+                seconds = 6;
+            }
         }
 
         private void Paper_Click(object sender, EventArgs e)
         {
-            
-            checkRule(1);
+            if (play < 20)
+            {
+                play++;
+                checkRule(1);
 
-            RandomPic();
-            RandomWord();
-            seconds = 6;
+                RandomPic();
+                RandomWord();
+                seconds = 6;
+            }
         }
        
 
