@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace IndukRSP
 {
+    /// <summary>
+    /// @brief 가위바위보하는 화면
+    /// @details 승리 조건에 따라 낼 것을 선택하여 점수를 획득
+    /// @date 2023-05-30
+    /// </summary>
     public partial class Form1 : Form
     {
         /// <summary>
@@ -22,9 +27,13 @@ namespace IndukRSP
         private int play = 1; //실행횟수
 
         /// <summary>
-        /// 획득한 점수 및 맞춘 개수
+        /// 맞춘 개수
         /// </summary>
         static public int Tot = 0;
+
+        /// <summary>
+        /// 획득한 점수
+        /// </summary>
         static public int Cnt = 0;
 
         /// <summary>
@@ -34,6 +43,9 @@ namespace IndukRSP
         private String Rule_2 = "비겨주세요";
         private String Rule_3 = "져주세요";
 
+        /// <summary>
+        /// Form1 실행
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
